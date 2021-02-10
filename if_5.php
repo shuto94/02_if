@@ -2,13 +2,14 @@
 
 $num = 17;
 
-$n = true;
+$flag = true;
 for($i = 2; $i < $num; $i++) {
-if($num % $i == 0) {
-$n = false;
-break;}
+    if($num % $i == 0) {
+        $flag = false;
+        break;
+    }
 }
-if ($n) {
+if ($flag) {
     echo $num. " は素数です ";
 } else {
     echo $num. " は素数ではありません ";
